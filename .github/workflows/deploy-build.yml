@@ -16,5 +16,5 @@ jobs:
             - run: yarn build
             - uses: actions/upload-artifact@v1
             with:
-                name: my-artifact
-                path: path/to/artifact
+                name: application
+                path: build/
