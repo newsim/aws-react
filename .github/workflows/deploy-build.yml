@@ -25,10 +25,10 @@ jobs:
         needs: build
         steps:
             - uses: actions/download-artifact@v1
-            with:
+              with:
                 name: application
             - uses: actions/setup-python@v1
-            with:
+              with:
                 python-version: '3.x'
             - run: pip install awscli
             - name: Configure AWS Credentials
